@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnerPage</title>
+    <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" media="all" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" /> -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.2.0/mdb.min.css" rel="stylesheet" /> -->
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="d-flex align-items-center">
+            <div class="menu-btn" id="menu-btn">
+                <img class="m-btn" src="images/menu-bar.svg" alt="Menu">
+            </div>
+            <img class="logo" src="images/header-logo.svg" alt="Company Logo">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <img src="images/search-icon.svg" class="srch-logo ms-5 me-2" alt="">
+                <input type="text" class="search-bar" placeholder="Search">
+            </div>
+        </div>
+        <div class="nav-items">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <img src="images/notification-icon.svg" alt="Notification">
+            </div>
+            <div class="user-profile">
+                <img src="images/profile.png" alt="User">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <span>John Doe</span>
+                    <img src="images/downward-arrow.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Layout -->
+    <div class="layout">
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <ul>
+                <li><a href="#" class="d-flex">
+                        <img src="images/dashboard-active.svg" alt="">
+                        <p>Dashboard</p>
+                    </a></li>
+                <li><a href="#" class="d-flex">
+                        <img src="images/graph-default.svg" alt="">
+                        <p>Analysis</p>
+                    </a></li>
+                <li><a href="#" class="d-flex">
+                        <img src="images/inbox-default.svg" alt="">
+                        <p>Inbox</p>
+                    </a></li>
+                <li><a href="#" class="d-flex">
+                        <img src="images/clock-default.svg" alt="">
+                        <p>History</p>
+                    </a></li>
+                <li><a href="#" class="d-flex">
+                        <img src="images/user-default.svg" alt="">
+                        <p>Users</p>
+                    </a></li>
+                <li><a href="#" class="d-flex">
+                        <img src="images/maintenance-default.svg" alt="">
+                        <p>Maintenance</p>
+                    </a></li>
+                <li><a href="#" class="d-flex">
+                        <img src="images/setting-default.svg" alt="">
+                        <p>Setting</p>
+                    </a></li>
+            </ul>
+        </div>
+            <!-- dashboard content -->
+            <div class="second1">
+                <div class="analysis-content mx-5">
+                    <p class="title">Analysis</p>
+                </div>
+                <div class="analysis-form">
+                    <form class="form-content" action="">
+                        <div class="col-one row">
+                            <p class="pt-4 f-label">One Column</p>
+                            <div class="form-floating col-lg-12 col-sm-12 col-md-12">
+                                <input type="text" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput" class="ps-4">Name</label>
+                            </div>
+                            <div class="col mb-3">
+                                <select class="form-select col-lg-12 col-sm-12 col-md-12"
+                                    aria-label="Default select example" style="height: 57px;">
+                                    <option selected>Dropdown</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="form-floating col-lg-12 col-sm-12 col-md-12">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                    style="height: 100px"></textarea>
+                                <label for="floatingTextarea2 " class="p-4">Multiple Line</label>
+                            </div>
+                        </div>
+                        <div class="col-two">
+                            <p class="my-4 f-label">Two Column</p>
+                            <div class="text-center">
+                                <div class="row row-cols-2">
+                                    <div class="col">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="floatingInput"
+                                                placeholder="name@example.com">
+                                            <label for="floatingInput" class="ps-4">Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="floatingInput"
+                                                placeholder="name@example.com">
+                                            <label for="floatingInput" class="ps-4">John Deo</label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-floating">
+                                            <input type="password" class="form-control" id="floatingInput"
+                                                placeholder="name@example.com">
+                                            <label for="floatingInput" class="ps-4">Password</label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <select class="form-select p-3" aria-label="Default select example"
+                                            style="height: 57px;">
+                                            <option selected>Dropdown</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-three">
+                            <p class="my-4 f-label">Three Column</p>
+                            <div class="row">
+                                <div class="col-6 col-md-4">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="floatingInput"
+                                            placeholder="name@example.com">
+                                        <label for="floatingInput" class="ps-4">Focus</label>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="form-floating">
+                                        <input type="password" class="form-control" id="floatingInput"
+                                            placeholder="name@example.com">
+                                        <label for="floatingInput" class="ps-4">Password</label>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="floatingInput dis"
+                                            placeholder="name@example.com">
+                                        <label for="floatingInput" class="ps-4">Disabled</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-four">
+                            <p class="my-4 f-label">Four Column</p>
+                            <div class="row">
+                                <div class="col-6 col-md-3">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="floatingInput"
+                                            placeholder="name@example.com">
+                                        <label for="floatingInput" class="ps-4">Designation</label>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="form-floating">
+                                        <input type="password" class="form-control" id="floatingInput"
+                                            placeholder="name@example.com">
+                                        <label for="floatingInput" class="ps-4">Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="floatingInput dis"
+                                            placeholder="name@example.com">
+                                        <label for="floatingInput" class="ps-4">Username</label>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <select class="form-select p-3" aria-label="Default select example"
+                                        style="height: 57px;">
+                                        <option selected>Dropdown</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="other-element">
+                            <p class="my-4 f-label">Other Design Element</p>
+                            <div class="upload">
+                                <p class="">File Upload</p>
+                                <div class="d-flex u1">
+                                    <div class="file align-content-center">
+                                        <a type="file" class="ps-4" href="">Upload</a>
+                                    </div>
+                                    <p class="mx-4">No item selected</p>
+                                </div>
+                            </div>
+                            <div class="radio-btn">
+                                <p class="mt-4">Radio Button</p>
+                                <div class="radio d-flex">
+                                    <div class="form-check me-5">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            Option 1
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2" checked>
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            Option 2
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="checks">
+                                <p class="mt-4">Checkbox</p>
+                                <div class="d-flex">
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Option 1
+                                        </label>
+                                    </div>
+                                    <div class="form-check sqr">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                            checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            Option 2
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="snackbar">
+                                <p class="mt-4">Snackbar</p>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="alert border-danger text-danger d-flex" role="alert">
+                                            <img src="images/error-icon.svg" alt="">
+                                            This is an error meassage
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="alert border-info text-info d-flex" role="alert">
+                                            <img src="images/info-icon.svg" alt="">
+                                            This is an information message!
+                                        </div>
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="col">
+                                        <div class="alert border-warning text-warning d-flex" role="alert">
+                                            <img src="images/warning-icon.svg" alt="">
+                                            This is a warning message!
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="alert border-success text-success d-flex" role="alert">
+                                            <img src="images/success-icon.svg" alt="">
+                                            This is a success message!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="call-to-action">
+                                <p class="mt-4">Call to action</p>
+                                <button type="button" class="call btn border-danger mx-2">Primary</button>
+                                <button type="button" class="call btn border-danger mx-2">Secondary</button>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <p class="mt-4">Tabs</p>
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                        data-bs-target="#home" type="button" role="tab" aria-controls="home"
+                                        aria-selected="true">Home</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                        data-bs-target="#profile" type="button" role="tab" aria-controls="profile"
+                                        aria-selected="false">Profile</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                                        data-bs-target="#contact" type="button" role="tab" aria-controls="contact"
+                                        aria-selected="false">Contact</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                    aria-labelledby="home-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati vero reiciendis illum, tempora dignissimos mollitia velit sit, ab eum, quisquam cumque? Eos impedit ullam totam illo commodi! Est, numquam minus dolore sed alias voluptatum. Veritatis nemo voluptatem ex eaque quos culpa magnam accusantium vero ab. Tempore aspernatur qui facere dolor odit eum fuga at asperiores assumenda ipsa. Labore voluptates rem illo sint qui aliquid accusamus nam similique repudiandae cupiditate, provident ratione ipsa quibusdam voluptas. Itaque non similique deserunt ea quas quisquam id, voluptate sapiente praesentium quasi reprehenderit! Officia architecto voluptatem nihil culpa, similique minima, dolor dolore omnis harum eius eos.</div>
+                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur est reiciendis sunt quo veritatis, esse necessitatibus cumque quis in eius beatae natus voluptatibus voluptatem nihil doloremque dolorem rem assumenda incidunt vitae consequuntur! Provident rerum distinctio similique eveniet consequatur ipsa dolores error vel voluptatem adipisci. Eaque enim cum, alias praesentium hic soluta, sit atque minima tenetur sunt sed nostrum eius incidunt nesciunt molestiae quas. Deserunt provident iste architecto! Ducimus ipsum sapiente nobis fugit repellat, ratione hic, totam tempora adipisci neque minima quia veritatis sit enim officiis. Labore</div>
+                                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam consequuntur consectetur ad voluptas autem ab deleniti architecto dignissimos magnam fugiat perferendis quo iure perspiciatis nihil excepturi praesentium suscipit nobis error dicta maxime veniam doloremque, in distinctio dolorem. Voluptas fugit necessitatibus nesciunt commodi dolore! Aut beatae autem maxime laborum officiis illum eveniet perferendis exercitationem inventore in praesentium est, aperiam repellendus labore dolor neque tempora impedit odit! Facilis esse quia dolorum illo distinctio dolor cumque aspernatur quod iusto dicta, velit, aliquid delectus ea quisquam a at molestiae accusamus magni excepturi! Libero tenetur dolore explicabo officia autem praesentium provident, ipsum magnam voluptatem quis quo, totam aliquid error repudiandae. Earum et blanditiis nihil, consequuntur deserunt quidem mollitia veritatis dolorem modi corrupti natus dignissimos quam.</div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

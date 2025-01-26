@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" media="all" rel="stylesheet">
+    <style>
+        .menu {
+            /* margin: 12px; */
+        }
+
+        .logo {
+            margin: 15px;
+        }
+
+        .search {
+            height: 20px;
+            width: 20px;
+            margin-right: 10px;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+            margin-top: 6px;
+        }
+
+        .srch {
+            border: none;
+            border-color: transparent;
+            background: transparent;
+        }
+
+        .name {
+            margin: 0 20px 0 20px;
+        }
+
+        .sidebar {
+            width: 242px;
+            /* height: 1279px; */
+            background-color: #FFFFFF;
+        }
+
+        .sidebar ul {
+            padding: 0;
+        }
+
+        .sidebar ul li a {
+            display: flex;
+            align-items: center;
+            height: 45px;
+            width: 190px;
+            text-decoration: none;
+            color: #3E3E3E;
+        }
+
+        .sidebar ul li a p {
+            margin: 0;
+        }
+
+        .sidebar ul li img {
+            margin: 15px;
+            width: 40px;
+            height: 40px;
+        }
+
+        .sidebar ul li {
+            list-style: none;
+            margin: 20px auto;
+        }
+
+        .sidemenu {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img class="menu" src="images/menu-bar.svg" alt="">
+                <!-- <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                    aria-controls="offcanvasExample">   
+                </a>
+
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <div class="search-container">
+                            <img class="search" src="images/search-icon.svg" alt="">
+                            <input class="srch" type="text" placeholder="Search">
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div> 
+                    <div class="offcanvas-body">
+                        <aside class="d-flex flex-column sidebar bg-white">
+                            <ul class="list">
+                                <li class="dashboard">
+                                    <a href="#">
+                                        <img src="images/dashboard-active.svg" alt="">
+                                        <p class="dash">Dashboard</p>
+                                    </a>
+                                </li>
+                                <li class="analysis">
+                                    <a href="#">
+                                        <img class="" src="images/graph-default.svg" alt="">
+                                        <p>Analysis</p>
+                                    </a>
+                                </li>
+                                <li class="inbox">
+                                    <a href="#">
+                                        <img src="images/inbox-default.svg" alt="">
+                                        <p>Inbox</p>
+                                    </a>
+                                </li>
+                                <li class="history">
+                                    <a href="#">
+                                        <img  src="images/clock-default.svg" alt="">
+                                        <p>History</p>
+                                    </a>
+                                </li>
+                                <li class="user">
+                                    <a href="#">
+                                        <img src="images/user-default.svg" alt="">
+                                        <p>Users</p>
+                                    </a>
+                                </li>
+                                <li class="maintenance">
+                                    <a href="#">
+                                        <img src="images/maintenance-default.svg" alt="">
+                                        <p>Maintenance</p>
+                                    </a>
+                                </li>
+                                <li class="setting">
+                                    <a href="#">
+                                        <img src="images/setting-default.svg" alt="">
+                                        <p>Setting</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </aside>
+                    </div>
+                </div>-->
+            </a> 
+            <img class="logo" src="images/header-logo.svg" alt="">
+
+            <div class="collapse navbar-collapse d-none d-lg-block" id="navbarNav">
+                <div class="search-container">
+                    <img class="search" src="images/search-icon.svg" alt="">
+                    <input class="srch" type="text" placeholder="Search">
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center ms-auto">
+                <div class="d-none d-lg-block">
+                    <img class="notification" src="images/notification-icon.svg" alt="">
+                </div>
+                <img src="images/profile.png" alt="" class="ms-3">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <p class="name mb-0">John Deo</p>
+                    <img src="images/downward-arrow.svg" alt="" class="ms-2">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <aside class="d-flex flex-column sidebar bg-white">
+        <ul class="list">
+            <li class="dashboard">
+                <a href="#">
+                    <img src="images/dashboard-active.svg" alt="">
+                    <p class="dash">Dashboard</p>
+                </a>
+            </li>
+            <li class="analysis">
+                <a href="#">
+                    <img class="" src="images/graph-default.svg" alt="">
+                    <p>Analysis</p>
+                </a>
+            </li>
+            <li class="inbox">
+                <a href="#">
+                    <img src="images/inbox-default.svg" alt="">
+                    <p>Inbox</p>
+                </a>
+            </li>
+            <li class="history">
+                <a href="#">
+                    <img src="images/clock-default.svg" alt="">
+                    <p>History</p>
+                </a>
+            </li>
+            <li class="user">
+                <a href="#">
+                    <img src="images/user-default.svg" alt="">
+                    <p>Users</p>
+                </a>
+            </li>
+            <li class="maintenance">
+                <a href="#">
+                    <img src="images/maintenance-default.svg" alt="">
+                    <p>Maintenance</p>
+                </a>
+            </li>
+            <li class="setting">
+                <a href="#">
+                    <img src="images/setting-default.svg" alt="">
+                    <p>Setting</p>
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

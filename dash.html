@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" media="all" rel="stylesheet">
+    <link rel="stylesheet" href="css/dashstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                        aria-controls="offcanvasExample">
+                        <img class="menu" src="images/menu-bar.svg" alt="">
+                    </a>
+
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                        aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+                            <div class="search-container">
+                                <img class="search" src="images/search-icon.svg" alt="">
+                                <input class="srch" type="text" placeholder="Search">
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <aside class="d-flex flex-column sidebar bg-white">
+                                <ul class="list">
+                                    <li class="dashboard">
+                                        <a href="#">
+                                            <img src="images/dashboard-active.svg" alt="">
+                                            <p class="dash">Dashboard</p>
+                                        </a>
+                                    </li>
+                                    <li class="analysis">
+                                        <a href="#">
+                                            <img class="" src="images/graph-default.svg" alt="">
+                                            <p>Analysis</p>
+                                        </a>
+                                    </li>
+                                    <li class="inbox">
+                                        <a href="#">
+                                            <img src="images/inbox-default.svg" alt="">
+                                            <p>Inbox</p>
+                                        </a>
+                                    </li>
+                                    <li class="history">
+                                        <a href="#">
+                                            <img src="images/clock-default.svg" alt="">
+                                            <p>History</p>
+                                        </a>
+                                    </li>
+                                    <li class="user">
+                                        <a href="#">
+                                            <img src="images/user-default.svg" alt="">
+                                            <p>Users</p>
+                                        </a>
+                                    </li>
+                                    <li class="maintenance">
+                                        <a href="#">
+                                            <img src="images/maintenance-default.svg" alt="">
+                                            <p>Maintenance</p>
+                                        </a>
+                                    </li>
+                                    <li class="setting">
+                                        <a href="#">
+                                            <img src="images/setting-default.svg" alt="">
+                                            <p>Setting</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </aside>
+                        </div>
+                    </div>
+                    <img class="logo" src="images/header-logo.svg" alt="">
+                </a>
+
+                <div class="collapse navbar-collapse d-none d-lg-block" id="navbarNav">
+                    <div class="search-container">
+                        <img class="search" src="images/search-icon.svg" alt="">
+                        <input class="srch" type="text" placeholder="Search">
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center ms-auto">
+                    <div class="d-none d-lg-block">
+                        <img class="notification" src="images/notification-icon.svg" alt="">
+                    </div>
+                    <img src="images/profile.png" alt="" class="ms-3">
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <p class="name mb-0">John Deo</p>
+                        <img src="images/downward-arrow.svg" alt="" class="ms-2">
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- <header>
+            <nav>
+                <div id="menu">
+                    <img src="images/menu-bar.svg" alt="">
+                </div>
+                <div id="dashlogo">
+                    <img src="images/header-logo.svg" alt="">
+                </div>
+                <div id="search">
+                    <img src="images/search-icon.svg" alt="">
+                </div>
+                <span>
+                    <p class="search-txt">Search</p>
+                </span>
+                <div id="notification">
+                    <img src="images/notification-icon.svg" alt="">
+                </div>
+                <div id="profile">
+                    <img src="images/profile.png" alt="">
+                </div>
+                <span>
+                    <p>John Deo</p>
+                </span>
+                <div id="dropdown">
+                    <img src="images/select-downward.svg" alt="">
+                </div>
+            </nav>
+        </header> -->
+        <div class="content">
+
+            <!-- dashboard content -->
+            <div class="second">
+                <div class="dashcontent mx-5">
+                    <p class="title">Dashboard</p>
+                </div>
+                <div class="cardsx row">
+                    <div
+                        class="n-prod box d-flex justify-content-center align-items-center col-lg-2 col-md-3 col-sm-6 col-12">
+                        <img src="/images/star.svg" alt="">
+                        <div class="contents text-center">
+                            <strong class="h">23,456</strong>
+                            <p class="m-0">New Product</p>
+                        </div>
+                    </div>
+                    <div
+                        class="n-prod box d-flex justify-content-center align-items-center col-lg-2 col-md-3 col-sm-6 col-12">
+                        <img src="/images/new-product.svg" alt="">
+                        <div class="contents text-center">
+                            <strong class="h">2345</strong>
+                            <p class="m-0">Added Product</p>
+                        </div>
+                    </div>
+                    <div
+                        class="n-prod box d-flex justify-content-center align-items-center col-lg-2 col-md-3 col-sm-6 col-12">
+                        <img src="/images/new-product.svg" alt="">
+                        <div class="contents text-center">
+                            <strong class="h">32,456</strong>
+                            <p class="m-0">Total Product</p>
+                        </div>
+                    </div>
+                    <div
+                        class="n-prod box d-flex justify-content-center align-items-center col-lg-2 col-md-3 col-sm-6 col-12">
+                        <img src="/images/dollar-filled.svg" alt="">
+                        <div class="contents text-center">
+                            <strong class="h">5678</strong>
+                            <p class="m-0">Today’s Sale</p>
+                        </div>
+                    </div>
+                    <div
+                        class="n-prod box d-flex justify-content-center align-items-center col-lg-2 col-md-3 col-sm-6 col-12">
+                        <img src="/images/money-bag.svg" alt="">
+                        <div class="contents text-center">
+                            <strong class="h">33,5342</strong>
+                            <p class="m-0">Total Sale</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="graph row">
+                    <!-- Sale Data -->
+                    <div class="sale-data">
+                        <div class="sale-tx d-flex">
+                            <p class="sale-head-text">Sales</p>
+                            <div class="duration">
+                                <a class="time" href="#">Weekly</a>
+                                <a class="time" href="#">Monthly</a>
+                                <a class="time" href="#">Yearly</a>
+                            </div>
+                        </div>
+                        <div class="graph-img">
+                            <img src="images/data-graph.png" alt="Graph showing sales data">
+                        </div>
+                    </div>
+
+                    <!-- Pie Chart -->
+                    <div class="piechart">
+                        <p class="sale-head-text">Sales by Country</p>
+                        <div class="pie">
+                            <img src="images/pie-chart.svg" alt="Pie chart">
+                        </div>
+                        <div class="pie-label justify-content-center d-flex mt-auto align-content-center flex-wrap">
+                            <div class="first-column">
+                                <div class="d-flex dts">
+                                    <span class="dot btn-danger m-2"></span>
+                                    <p class="countries">United States of America</p>
+                                </div>
+                                <div class="d-flex dts2">
+                                    <span class="dot org m-2"></span>
+                                    <p class="countries">Russia</p>
+                                </div>
+                            </div>
+                            <div class="second-column">
+                                <div class="d-flex">
+                                    <span class="dot btn-success m-2"></span>
+                                    <p class="countries">Canada</p>
+                                </div>
+                                <div class="d-flex">
+                                    <span class="dot btn-warning m-2"></span>
+                                    <p class="countries">India</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="tbl-data bg-white m-4">
+                <div class="tbl-head d-flex">
+                    <div class="inv">
+                        <p class="title mr-2">Invoices</p>
+                    </div>
+                    <div class="v-all">
+                        <a class="viewall" href="#">view all</a>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <tbody class="table-group-divider">
+                                <tr>
+                                    <th class="tbl-tag" scope="col">INVOICE</th>
+                                    <th class="tbl-tag" scope="col">COMPANY NAME</th>
+                                    <th class="tbl-tag" scope="col">EMAIL</th>
+                                    <th class="tbl-tag" scope="col">DUE DATE</th>
+                                    <th class="tbl-tag" scope="col">STATUS</th>
+                                    <th class="tbl-tag" scope="col">AMOUNT</th>
+                                </tr>
+                                <tr>
+                                    <td scope="row">651535</td>
+                                    <td>Public Adjusting Firm</td>
+                                    <td>georgia.young@example.com</td>
+                                    <td>24 May, 2020</td>
+                                    <td class="text-success">Paid</td>
+                                    <td>$47,800</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">558612</td>
+                                    <td>Other</td>
+                                    <td>jessica.hanson@example.com</td>
+                                    <td>24 May, 2020</td>
+                                    <td class="text-success">Paid</td>
+                                    <td>$98,000</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">558612</td>
+                                    <td>Vendor</td>
+                                    <td>alma.lawson@example.com</td>
+                                    <td>8 Sep, 2020</td>
+                                    <td class="text-success">Paid</td>
+                                    <td>$20,900</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">558612</td>
+                                    <td>Property Management Company</td>
+                                    <td>kenzi.lawson@example.com</td>
+                                    <td>22 Oct, 2020</td>
+                                    <td class="text-success">Paid</td>
+                                    <td>$10,570</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">651535</td>
+                                    <td>Subcontractor Company</td>
+                                    <td>jackson.graham@example.com</td>
+                                    <td>1 Feb, 2020</td>
+                                    <td class="text-danger">Failed</td>
+                                    <td>$10,200</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">653518</td>
+                                    <td>Mortgage Company</td>
+                                    <td>felicia.reid@example.com</td>
+                                    <td>22 Oct, 2020</td>
+                                    <td class="text-secondary">Pending</td>
+                                    <td>$12,600</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">487441</td>
+                                    <td>TPA</td>
+                                    <td>dolores.chambers@example.com</td>
+                                    <td>21 Sep, 2020</td>
+                                    <td class="text-success">Paid</td>
+                                    <td>$11,170</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">267400</td>
+                                    <td>Fire Department</td>
+                                    <td>nevaeh.simmons@example.com</td>
+                                    <td>17 Oct, 2020</td>
+                                    <td class="text-danger">Failed</td>
+                                    <td>$28,000</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">$28,000</td>
+                                    <td>Insurance Carrier</td>
+                                    <td>curtis.weaver@example.com</td>
+                                    <td>21 Sep, 2020</td>
+                                    <td class="text-success">Paid</td>
+                                    <td>$10,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
